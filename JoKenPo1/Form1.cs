@@ -41,5 +41,31 @@ namespace JoKenPo1
         {
 
         }
+
+        private void StartGame(int opcao)
+        {
+            labelResultado.Visible = false;
+            Game jogo = new Game();
+
+            switch (jogo.Jogar(opcao))
+            {
+                case Game.Resultado.Ganhar:
+                    picResultado.BackgroundImage = Image.FromFile("imagens/Ganhar.png");
+                    break;
+
+                case Game.Resultado.Preder:
+                    picResultado.BackgroundImage = Image.FromFile("imagens/Perder.png");
+                    break;
+
+                case Game.Resultado.Empatar:
+                    picResultado.BackgroundImage = Image.FromFile("imagens/Empatar.png");
+                    break;
+
+                default:
+                    pictureBox1.Image = jogo.ImgJogador;
+                    pictureBox2.Image = jogo.ImgPC;
+                    break;
+            }
+        }
     }
 }
