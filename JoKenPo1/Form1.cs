@@ -51,15 +51,15 @@ namespace JoKenPo1
             {
                 case Game.Resultado.Ganhar:
                     picResultado.BackgroundImage = Image.FromFile("imagens/Ganhar.png");
-                    break;
+                    goto default;
 
                 case Game.Resultado.Preder:
                     picResultado.BackgroundImage = Image.FromFile("imagens/Perder.png");
-                    break;
+                    goto default;
 
                 case Game.Resultado.Empatar:
                     picResultado.BackgroundImage = Image.FromFile("imagens/Empatar.png");
-                    break;
+                    goto default;
 
                 default:
                     pictureBox1.Image = jogo.ImgJogador;
