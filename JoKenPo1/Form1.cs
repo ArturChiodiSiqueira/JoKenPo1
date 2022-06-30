@@ -29,16 +29,18 @@ namespace JoKenPo1
 
         private void btnPedra_Click(object sender, EventArgs e)
         {
-
+            StartGame(0);
         }
 
         private void btnPapel_Click(object sender, EventArgs e)
         {
+            StartGame(2);
 
         }
 
         private void btnTesoura_Click(object sender, EventArgs e)
         {
+            StartGame(1);
 
         }
 
