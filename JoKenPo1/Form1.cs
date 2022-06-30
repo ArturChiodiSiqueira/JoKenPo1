@@ -26,5 +26,20 @@ namespace JoKenPo1
         {
 
         }
+
+        private void btnPedra_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPapel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTesoura_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
